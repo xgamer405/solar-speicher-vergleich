@@ -7,17 +7,17 @@
     "current_price_eur": 999.0,
     "price_source": "Yuma Produktseite automatisch langsam gecrawlt",
     "price_checked_at": "2026-06-14",
-    "pv_mppt": "PV gesamt: 4.000 W | MPPT: 4 | je Eingang: Herstellerseite ohne belastbare Einzelwerte | Zusatz: direkt an Speicher, Mikro-WR nachgelagert",
-    "mppt_details": "Gesamt-PV: bis 4.000 W | MPPT/Strings: 4 MPPT / 4 PV-Eingänge | je MPPT/Port: Einzelwerte öffentlich nicht sauber ausgewiesen | Spannung/Strom: vor Kauf aus offiziellem Datenblatt prüfen | Hinweis: für 4x410 W mit verschiedenen Ausrichtungen grundsätzlich passend dimensioniert",
-    "netzausgang": "Netz-Einspeisung: bis 800 W geregelt | Insel/Backup: bis 2.500 W laut Hersteller/Yuma | AC-Laden: nicht als Hauptfunktion angegeben",
-    "besonderheiten": "Sehr passend für 1,6 kWp schlecht ausgerichtete PV; modular bis 16 kWh; outdoor; lokale Smart-Home-Freiheit laut Yuma; Brandschutz/Sicherheitsfeatures.",
+    "pv_mppt": "PV gesamt: 4.000 W | MPPT: 4 | je Eingang: 1.000 W, max. 2 Module je Eingang | Zusatz: direkt am Speicher; Mikro-WR/AC netzseitig nachgelagert",
+    "mppt_details": "Gesamt-PV: 4.000 W | MPPT/Strings: 4 MPPT / 4 DC-Eingänge, max. 8 PV-Module | je MPPT/Port: 1.000 W | Spannung: max. 60 V, Start 18–60 V, MPPT 16–60 V | Strom: max. Eingangsstrom 32 A je Port, Kurzschlussstrom 40 A je Port | Hinweis: offizielle Werte aus Hoymiles HiBattery 4020 X Datenblatt REV1.1",
+    "netzausgang": "Netz-Einspeisung: HB-4020-X 800 W / HB-4020-XM 2.500 W | Insel/Backup: AC Off-Grid bis 2.500 W | AC-Laden: AC-Eingang bis 2.500 W laut Datenblatt",
+    "besonderheiten": "Sehr passend für 1,6 kWp schlecht ausgerichtete PV; 4x MPPT mit je 1 kW/16–60 V; 4,02 kWh LFP, modular bis 16 kWh; IP66; integrierter 2,5-kW-Inverter; MQTT/offene EMS-Anbindung laut Hersteller.",
     "mobilitaet": "mittel",
     "jan_score": 9,
     "link": "https://yuma.de/pages/hoymiles-hibattery-4020",
     "idealo_url": "https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=Hoymiles%20HiBattery%204020%20X",
-    "datenblatt_url": "https://www.hoymiles.com/products/hibattery-4020-x.html",
-    "quelle": "Yuma/Hoymiles, geprüft 2026-06-14",
-    "notizen": "Top-Kandidat, wenn Preis 999 € real verfügbar bleibt. Exakte MPPT-Einzelwerte noch aus offiziellem PDF nachziehen.",
+    "datenblatt_url": "https://www.hoymiles.com/uploadfile/1/202606/95d670b3a3.pdf",
+    "quelle": "Offizielles Hoymiles-Datenblatt REV1.1 + Yuma Preis, geprüft 2026-06-14",
+    "notizen": "Datenblatt bestätigt die vormals offenen MPPT-Einzelwerte: 1.000 W, 16–60 V MPPT, 32 A Eingangsstrom je Port. Top-Kandidat, wenn 999 € real verfügbar bleibt.",
     "crawler_sources": [
       {
         "name": "Yuma Produktseite",
@@ -94,10 +94,7 @@
         "url": "https://eu.marstekenergy.com/en-us/products/marstek-jupiter-c-plus-all-in-one",
         "price": 694.0,
         "candidates": [
-          694.0,
-          809.0,
-          1041.0,
-          1156.0
+          694.0
         ],
         "error": null
       }
@@ -117,7 +114,7 @@
     "kategorie": "Fertigsystem | DC-Balkonspeicher | AC-Laden möglich",
     "kapazitaet_wh": 2688,
     "preis_eur": 999,
-    "current_price_eur": 998.0,
+    "current_price_eur": 999.0,
     "price_source": "Anker Shop automatisch langsam gecrawlt",
     "price_checked_at": "2026-06-14",
     "pv_mppt": "PV gesamt: 3.600 W | MPPT: 4 | je Eingang: bis ca. 900 W, FAQ begrenzt über Spannung/Strom | Zusatz: direkt an Speicher, Mikro-WR nachgelagert",
@@ -149,28 +146,15 @@
       {
         "source": "Anker Shop",
         "url": "https://anker.com/eu-de/products/b5140442",
-        "price": 998.0,
+        "price": 999.0,
         "candidates": [
-          998.0,
           999.0,
-          1000.0,
-          1076.0,
-          1099.0,
-          1276.0,
           1299.0,
-          1396.0,
-          1398.0,
-          1534.0,
           1566.0,
-          1596.0,
-          1599.0,
-          1694.0,
-          1699.0,
           1718.0,
-          1796.0,
-          1799.0,
-          1899.0,
-          1992.0
+          2198.0,
+          2437.0,
+          3097.0
         ],
         "error": null
       }
@@ -194,6 +178,12 @@
         "price_eur": 998.0,
         "source": "Anker Shop",
         "url": "https://anker.com/eu-de/products/b5140442"
+      },
+      {
+        "date": "2026-06-14",
+        "price_eur": 999.0,
+        "source": "Anker Shop",
+        "url": "https://anker.com/eu-de/products/b5140442"
       }
     ]
   },
@@ -202,7 +192,7 @@
     "kategorie": "Fertigsystem | DC/AC-Hybrid-Balkonspeicher | mobile AC-Nutzung",
     "kapazitaet_wh": 1920,
     "preis_eur": 599,
-    "current_price_eur": 569.0,
+    "current_price_eur": 579.0,
     "price_source": "EcoFlow Shop automatisch langsam gecrawlt",
     "price_checked_at": "2026-06-14",
     "pv_mppt": "PV gesamt: 2.000 W DC + bis 800 W AC/Mikro-WR | MPPT: 4 | je Eingang: 500 W | Zusatz: AC-gekoppelter Mikro-WR-Eingang möglich",
@@ -234,18 +224,13 @@
       {
         "source": "EcoFlow Shop",
         "url": "https://de.ecoflow.com/products/stream-ultra-pro",
-        "price": 569.0,
+        "price": 579.0,
         "candidates": [
-          569.0,
           579.0,
           599.0,
-          618.0,
-          649.0,
           650.0,
           698.0,
           700.0,
-          749.0,
-          759.0,
           798.0,
           799.0,
           898.0,
@@ -253,9 +238,14 @@
           900.0,
           949.0,
           950.0,
-          998.0,
-          999.0,
-          1014.0
+          1014.0,
+          1015.0,
+          1047.0,
+          1097.0,
+          1099.0,
+          1109.0,
+          1199.0,
+          1382.0
         ],
         "error": null
       }
@@ -267,6 +257,12 @@
         "price_eur": 569.0,
         "source": "EcoFlow Shop",
         "url": "https://de.ecoflow.com/products/stream-ultra-pro"
+      },
+      {
+        "date": "2026-06-14",
+        "price_eur": 579.0,
+        "source": "EcoFlow Shop",
+        "url": "https://de.ecoflow.com/products/stream-ultra-pro"
       }
     ]
   },
@@ -275,7 +271,7 @@
     "kategorie": "Fertigsystem | DC/AC-Hybrid-Balkonspeicher | starke Insel-Funktion",
     "kapazitaet_wh": 2400,
     "preis_eur": 1099,
-    "current_price_eur": 999.0,
+    "current_price_eur": 1099.0,
     "price_source": "Zendure Shop automatisch langsam gecrawlt",
     "price_checked_at": "2026-06-14",
     "pv_mppt": "PV gesamt: 3.000 W DC + AC-Kopplung bis 4.800 W System | MPPT: 4 | je Eingang: 750 W | Zusatz: bidirektionale/AC-Kopplung je Setup",
@@ -307,9 +303,8 @@
       {
         "source": "Zendure Shop",
         "url": "https://www.zendure.de/products/zendure-solarflow-2400-pro",
-        "price": 999.0,
+        "price": 1099.0,
         "candidates": [
-          999.0,
           1099.0,
           1168.0,
           1299.0,
@@ -328,7 +323,8 @@
           1768.0,
           1948.0,
           1998.0,
-          1999.0
+          2017.0,
+          2067.0
         ],
         "error": null
       }
@@ -340,6 +336,80 @@
         "price_eur": 999.0,
         "source": "Zendure Shop",
         "url": "https://www.zendure.de/products/zendure-solarflow-2400-pro"
+      },
+      {
+        "date": "2026-06-14",
+        "price_eur": 1099.0,
+        "source": "Zendure Shop",
+        "url": "https://www.zendure.de/products/zendure-solarflow-2400-pro"
+      }
+    ]
+  },
+  {
+    "produkt": "Zendure SolarFlow 2400 AC+",
+    "kategorie": "Fertigsystem | AC-gekoppelter Speicher | Retrofit für Dach-/Bestands-PV",
+    "kapazitaet_wh": 2400,
+    "preis_eur": 1079,
+    "current_price_eur": 1079.0,
+    "price_source": "Zendure Shop AC+ automatisch langsam gecrawlt",
+    "price_checked_at": "2026-06-14",
+    "pv_mppt": "PV gesamt: keine direkte DC-PV/MPPT-Anbindung | MPPT: 0 | je Eingang: PV läuft über bestehenden Mikro-/String-Wechselrichter AC-gekoppelt | Zusatz: lädt/entlädt über AC-Port nach Smart-Meter/CT-Regelung",
+    "mppt_details": "Gesamt-PV: abhängig vom vorhandenen Dach-/Balkon-PV-Wechselrichter | MPPT/Strings: keine integrierten PV-MPPTs am Speicher | je MPPT/Port: n/a | Spannung/Strom: AC-seitig 230 V, max. AC-Eingang 3.200 W On-Grid bzw. 2.400 VA Off-Grid | Hinweis: sehr interessant als Retrofit-AC-Speicher, löst aber Jans Multi-MPPT-Problem der 4 Module nicht direkt",
+    "netzausgang": "Netz-Einspeisung: 800 W Standard / 2.400 W Premium nach Elektriker-Freigabe | Insel/Backup: Off-Grid-Ausgang bis 3.200 VA, 15 ms EPS, 2.400 W Batterieanteil kontinuierlich laut Manual | AC-Laden: max. 3.200 W On-Grid, 2.400 VA Off-Grid",
+    "besonderheiten": "AC-gekoppelter Plug&Play-Retrofit-Speicher für vorhandene PV-Wechselrichter; 2,4 kWh LFP intern, erweiterbar bis 16,8 kWh mit bis zu 5 Zusatzbatterien; IP65; HEMS/AI, Smart Meter/CT, dynamische Tarife; MQTT/Home Assistant laut Zendure-Seite.",
+    "mobilitaet": "mittel",
+    "jan_score": 7,
+    "link": "https://zendure.com/products/zendure-solarflow-2400-ac-plus",
+    "idealo_url": "https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=Zendure%20SolarFlow%202400%20AC%20Plus",
+    "datenblatt_url": "https://cdn.shopify.com/s/files/1/0720/4379/0616/files/SolarFlow_2400_AC__User_Manual_EN_FR_20260122.pdf?v=1770547505",
+    "quelle": "Zendure Produktseite + SolarFlow 2400 AC+ User Manual, geprüft 2026-06-14",
+    "notizen": "Für Jans aktuelles 4-Modul-Setup technisch eher Ergänzung/Retrofit als Ersatz für Multi-MPPT: lädt AC-seitig aus Überschuss, hat keine direkten PV-Eingänge. Stark bei Bestands-Dach-PV, dynamischen Tarifen und Backup.",
+    "crawler_sources": [
+      {
+        "name": "Zendure Shop AC+",
+        "url": "https://zendure.com/products/zendure-solarflow-2400-ac-plus",
+        "min_price_eur": 900,
+        "max_price_eur": 3500
+      },
+      {
+        "name": "Idealo Suche",
+        "url": "https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=Zendure%20SolarFlow%202400%20AC%20Plus",
+        "min_price_eur": 800,
+        "max_price_eur": 3500
+      }
+    ],
+    "price_crawl_results": [
+      {
+        "source": "Zendure Shop AC+",
+        "url": "https://zendure.com/products/zendure-solarflow-2400-ac-plus",
+        "price": 1079.0,
+        "candidates": [
+          1079.0,
+          1208.0,
+          1279.0,
+          1798.0,
+          1927.0,
+          2517.0,
+          2646.0,
+          3236.0,
+          3365.0
+        ],
+        "error": null
+      }
+    ],
+    "price_url": "https://zendure.com/products/zendure-solarflow-2400-ac-plus",
+    "price_history": [
+      {
+        "date": "2026-06-14",
+        "price_eur": 958.0,
+        "source": "Zendure Shop AC+",
+        "url": "https://zendure.com/products/zendure-solarflow-2400-ac-plus"
+      },
+      {
+        "date": "2026-06-14",
+        "price_eur": 1079.0,
+        "source": "Zendure Shop AC+",
+        "url": "https://zendure.com/products/zendure-solarflow-2400-ac-plus"
       }
     ]
   },

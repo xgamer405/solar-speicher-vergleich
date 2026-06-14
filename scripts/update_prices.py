@@ -90,20 +90,21 @@ def html_to_text(raw: str) -> str:
 def extract_candidates(raw: str, source: dict[str, Any]) -> list[float]:
     candidates: list[float] = []
     text = html_to_text(raw)
-    # Include raw attributes too: several Shopify pages put prices in meta
-    # description/title attributes rather than body text.
-    scan_text = text + " " + html_lib.unescape(raw)
+    head_end = raw.lower().find("</head>")
+    head_raw = raw[:head_end] if head_end >= 0 else raw[:100_000]
+    # Include head attributes too: several Shopify pages put the actual product
+    # price in title/meta/early product JSON. Do not scan full raw HTML because
+    # recommendation widgets include unrelated product prices.
+    scan_text = text + " " + html_lib.unescape(head_raw)
 
     for euro, cent in PRICE_AFTER_RE.findall(scan_text) + PRICE_BEFORE_RE.findall(scan_text):
         val = normalize_price(euro, cent)
         if val is not None:
             candidates.append(val)
 
-    # Some shops expose structured JSON cents/amounts while rendering prices via JS.
-    for euro, cent in JSON_PRICE_RE.findall(raw):
-        val = normalize_price(euro, cent or None)
-        if val is not None:
-            candidates.append(val)
+    # Do not scan arbitrary JSON blobs for prices: Shopify recommendation/cross-sell
+    # scripts contain unrelated product prices. Visible text + head/meta prices are
+    # safer for this static comparison.
 
     for m in META_PRICE_RE.findall(raw):
         clean = m.strip().replace(".", "").replace(",", ".") if "," in m else m.strip()
