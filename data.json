@@ -56,25 +56,31 @@
     "price_url": "https://yuma.de/pages/hoymiles-hibattery-4020"
   },
   {
-    "produkt": "Marstek Jupiter C+",
+    "produkt": "Marstek Jupiter C+ / C2-Angebot",
     "kategorie": "Fertigsystem | DC-Balkonspeicher | Backup/Insel je Variante prüfen",
     "kapazitaet_wh": 2560,
-    "preis_eur": 405,
-    "current_price_eur": 694.0,
-    "price_source": "Marstek EU Shop automatisch langsam gecrawlt",
+    "preis_eur": 399,
+    "current_price_eur": 399.0,
+    "price_source": "Sonnenmatrix Angebot automatisch langsam gecrawlt",
     "price_checked_at": "2026-06-14",
     "pv_mppt": "PV gesamt: 2.400 W | MPPT: 4 | je Eingang: typ. 600 W rechnerisch | Zusatz: direkt an Speicher, Mikro-WR nachgelagert",
     "mppt_details": "Gesamt-PV: bis 2.400 W | MPPT/Strings: 4 MPPT / 4 PV-Eingänge | je MPPT/Port: rechnerisch 600 W, Hersteller nennt teils Gesamt-/Eingangsdaten | Spannung: 16–60 V | Strom: max. Kurzschlussstrom 20 A | Hinweis: MPPT-Wirkungsgrad 99,8 %, Insel/Backup-Funktion vor Kauf je Modellpaket prüfen",
     "netzausgang": "Netz-Einspeisung: bis 800 VA/W | Insel/Backup: je Variante/Zubehör prüfen | AC-Laden: nicht als Hauptfunktion angegeben",
-    "besonderheiten": "Extrem starkes Wh/€ Verhältnis, wenn Preis stimmt; modular bis 10,24 kWh; IP65; Touchscreen; Shelly/CT-Unterstützung laut Hersteller.",
+    "besonderheiten": "Sehr starkes Wh/€ Verhältnis beim 399€-Angebot; 2,56 kWh LFP, erweiterbar bis 10,24 kWh; 2,4 kW PV über 4 MPPT; integrierter Mikro-WR; IP65; Touchscreen. Hersteller/Shop nennen Anti-Feed-In mit Shelly/P1/Marstek CT002/CT003.",
     "mobilitaet": "mittel",
-    "jan_score": 8,
-    "link": "https://eu.marstekenergy.com/en-us/products/marstek-jupiter-c-plus-all-in-one",
+    "jan_score": 9,
+    "link": "https://sonnenmatrix.de/products/marstek-jupiter-c-2-56kwh-bis-zu-10-24kwh-2400w-ultraschneller-4-mppt-all-in-one-batteriespeicher-fur-balkon",
     "idealo_url": "https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=Marstek%20Jupiter%20C%20Plus",
     "datenblatt_url": "https://eu.marstekenergy.com/en-us/products/marstek-jupiter-c-plus-all-in-one",
-    "quelle": "Marstek Herstellerseite + Userpreis, geprüft 2026-06-14",
-    "notizen": "Dealpreis wirkt fast zu gut: vor Kauf EU-Shop, Garantie, VDE/CE, App/HA/Smart-Meter und tatsächliche Insel-Funktion prüfen.",
+    "quelle": "Sonnenmatrix Produktseite + Marstek Herstellerinfos + AstraMeter/hm2mqtt Recherche, geprüft 2026-06-14",
+    "notizen": "Wichtig: Link/Shop nennt „Jupiter C+“, nicht eindeutig „C2“. Für Jans Shelly Pro 3EM ist Nulleinspeisung voraussichtlich ohne seriellen Port möglich, wenn die Marstek-App den Shelly Smart Meter im LAN sauber erkennt. Home Assistant: Shelly Pro 3EM normal in HA einbinden; Marstek-Daten ohne RS485/seriell über Hame Relay + hm2mqtt per MQTT/Discovery anzeigen. Fallback: AstraMeter kann Shelly Pro 3EM bzw. CT002/CT003 aus HA-Sensoren emulieren, falls direkte Kopplung zickt.",
     "crawler_sources": [
+      {
+        "name": "Sonnenmatrix Angebot",
+        "url": "https://sonnenmatrix.de/products/marstek-jupiter-c-2-56kwh-bis-zu-10-24kwh-2400w-ultraschneller-4-mppt-all-in-one-batteriespeicher-fur-balkon",
+        "min_price_eur": 350,
+        "max_price_eur": 900
+      },
       {
         "name": "Marstek EU Shop",
         "url": "https://eu.marstekenergy.com/en-us/products/marstek-jupiter-c-plus-all-in-one",
@@ -90,22 +96,28 @@
     ],
     "price_crawl_results": [
       {
-        "source": "Marstek EU Shop",
-        "url": "https://eu.marstekenergy.com/en-us/products/marstek-jupiter-c-plus-all-in-one",
-        "price": 694.0,
+        "source": "Sonnenmatrix Angebot",
+        "url": "https://sonnenmatrix.de/products/marstek-jupiter-c-2-56kwh-bis-zu-10-24kwh-2400w-ultraschneller-4-mppt-all-in-one-batteriespeicher-fur-balkon",
+        "price": 399.0,
         "candidates": [
-          694.0
+          399.0
         ],
         "error": null
       }
     ],
-    "price_url": "https://eu.marstekenergy.com/en-us/products/marstek-jupiter-c-plus-all-in-one",
+    "price_url": "https://sonnenmatrix.de/products/marstek-jupiter-c-2-56kwh-bis-zu-10-24kwh-2400w-ultraschneller-4-mppt-all-in-one-batteriespeicher-fur-balkon",
     "price_history": [
       {
         "date": "2026-06-14",
         "price_eur": 694.0,
         "source": "Marstek EU Shop",
         "url": "https://eu.marstekenergy.com/en-us/products/marstek-jupiter-c-plus-all-in-one"
+      },
+      {
+        "date": "2026-06-14",
+        "price_eur": 399.0,
+        "source": "Sonnenmatrix Angebot",
+        "url": "https://sonnenmatrix.de/products/marstek-jupiter-c-2-56kwh-bis-zu-10-24kwh-2400w-ultraschneller-4-mppt-all-in-one-batteriespeicher-fur-balkon"
       }
     ]
   },
