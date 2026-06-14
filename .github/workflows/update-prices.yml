@@ -1,22 +1,28 @@
-name: Update Idealo prices
+name: Slow price crawl
 
 on:
   schedule:
-    - cron: '17 5 * * *'
+    # Langsam und selten: jeden zweiten Tag nachts deutscher Zeit grob 05:37/04:37.
+    - cron: '37 3 */2 * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: slow-price-crawl
+  cancel-in-progress: false
+
 jobs:
   update-prices:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Update prices from Idealo links
+      - name: Slowly crawl vendor/price pages
         run: python scripts/update_prices.py
       - name: Commit changed data
         run: |

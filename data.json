@@ -4,8 +4,8 @@
     "kategorie": "Balkon-/PV-Speicher, DC + Insel",
     "kapazitaet_wh": 4024,
     "preis_eur": 999,
-    "current_price_eur": 999,
-    "price_source": "Yuma Angebot; Idealo-Autoabfrage vorbereitet",
+    "current_price_eur": 999.0,
+    "price_source": "Yuma Produktseite automatisch langsam gecrawlt",
     "price_checked_at": "2026-06-14",
     "pv_mppt": "4000 W, 4 MPPT",
     "mppt_details": "4 MPPT, gesamt bis 4000 W PV. Je MPPT laut öffentlich sichtbarer Herstellerseite nicht vollständig ausgewiesen; konservativ vor Kauf Datenblatt prüfen. Bekannte Angabe: 4 MPPT / 4 kW PV Input.",
@@ -18,15 +18,50 @@
     "datenblatt_url": "https://www.hoymiles.com/products/hibattery-4020-x.html",
     "quelle": "Yuma/Hoymiles, geprüft 2026-06-14",
     "notizen": "Top-Kandidat, wenn Preis 999 € real verfügbar bleibt. Exakte MPPT-Einzelwerte noch aus offiziellem PDF nachziehen.",
-    "price_error": "Idealo Autoabfrage fehlgeschlagen (HTTPError); alter Preis beibehalten"
+    "crawler_sources": [
+      {
+        "name": "Yuma Produktseite",
+        "url": "https://yuma.de/pages/hoymiles-hibattery-4020",
+        "min_price_eur": 900,
+        "max_price_eur": 1800
+      },
+      {
+        "name": "Idealo Suche",
+        "url": "https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=Hoymiles%20HiBattery%204020%20X",
+        "min_price_eur": 800,
+        "max_price_eur": 2200
+      }
+    ],
+    "price_crawl_results": [
+      {
+        "source": "Yuma Produktseite",
+        "url": "https://yuma.de/pages/hoymiles-hibattery-4020",
+        "price": 999.0,
+        "candidates": [
+          999.0,
+          1000.0,
+          1249.0,
+          1269.0,
+          1299.0,
+          1359.0,
+          1399.0,
+          1549.0,
+          1569.0,
+          1659.0,
+          1699.0
+        ],
+        "error": null
+      }
+    ],
+    "price_url": "https://yuma.de/pages/hoymiles-hibattery-4020"
   },
   {
     "produkt": "Marstek Jupiter C+",
     "kategorie": "Balkon-Speicher, DC + Insel",
     "kapazitaet_wh": 2560,
     "preis_eur": 405,
-    "current_price_eur": 405,
-    "price_source": "Userangabe; Idealo-Autoabfrage vorbereitet",
+    "current_price_eur": 694.0,
+    "price_source": "Marstek EU Shop automatisch langsam gecrawlt",
     "price_checked_at": "2026-06-14",
     "pv_mppt": "2400 W PV, 4 MPPT",
     "mppt_details": "4 MPPT; gesamt max. PV-Eingangsleistung 2400 W; Betriebsspannungsbereich 16–60 V; Kurzschlussstrom 20 A; MPPT-Wirkungsgrad 99,8 %. Einzel-MPPT-Leistung rechnerisch/typisch 600 W, Stromangabe auf Herstellerseite als Gesamt-/Eingangsspezifikation geführt.",
@@ -39,15 +74,51 @@
     "datenblatt_url": "https://eu.marstekenergy.com/en-us/products/marstek-jupiter-c-plus-all-in-one",
     "quelle": "Marstek Herstellerseite + Userpreis, geprüft 2026-06-14",
     "notizen": "Dealpreis wirkt fast zu gut: vor Kauf EU-Shop, Garantie, VDE/CE, App/HA/Smart-Meter und tatsächliche Insel-Funktion prüfen.",
-    "price_error": "Idealo Autoabfrage fehlgeschlagen (HTTPError); alter Preis beibehalten"
+    "crawler_sources": [
+      {
+        "name": "Marstek EU Shop",
+        "url": "https://eu.marstekenergy.com/en-us/products/marstek-jupiter-c-plus-all-in-one",
+        "min_price_eur": 350,
+        "max_price_eur": 1200
+      },
+      {
+        "name": "Idealo Suche",
+        "url": "https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=Marstek%20Jupiter%20C%20Plus",
+        "min_price_eur": 350,
+        "max_price_eur": 1400
+      }
+    ],
+    "price_crawl_results": [
+      {
+        "source": "Marstek EU Shop",
+        "url": "https://eu.marstekenergy.com/en-us/products/marstek-jupiter-c-plus-all-in-one",
+        "price": 694.0,
+        "candidates": [
+          694.0,
+          809.0,
+          1041.0,
+          1156.0
+        ],
+        "error": null
+      }
+    ],
+    "price_url": "https://eu.marstekenergy.com/en-us/products/marstek-jupiter-c-plus-all-in-one",
+    "price_history": [
+      {
+        "date": "2026-06-14",
+        "price_eur": 694.0,
+        "source": "Marstek EU Shop",
+        "url": "https://eu.marstekenergy.com/en-us/products/marstek-jupiter-c-plus-all-in-one"
+      }
+    ]
   },
   {
     "produkt": "Anker SOLIX Solarbank 3 E2700 Pro",
     "kategorie": "Balkon-Speicher, DC + AC-ladefähig",
     "kapazitaet_wh": 2688,
     "preis_eur": 999,
-    "current_price_eur": 999,
-    "price_source": "Anker Shop; Idealo-Autoabfrage vorbereitet",
+    "current_price_eur": 998.0,
+    "price_source": "Anker Shop automatisch langsam gecrawlt",
     "price_checked_at": "2026-06-14",
     "pv_mppt": "3600 W, 4 MPPT",
     "mppt_details": "4 MPPT; max. PV-Eingang 3600 W. Je MPPT/Port laut Anker FAQ: Betriebsspannung 15–60 V, Betriebsstrom ≤14 A; Module >500 W je Port zulässig solange 15–60 V und ≤14 A eingehalten werden.",
@@ -60,15 +131,79 @@
     "datenblatt_url": "https://anker.com/eu-de/products/b5140442#specs",
     "quelle": "Anker Produktseite/FAQ, geprüft 2026-06-14",
     "notizen": "Gute Plug&Play-Lösung, aber teurer pro Wh als Dealpreise.",
-    "price_error": "Idealo Autoabfrage fehlgeschlagen (HTTPError); alter Preis beibehalten"
+    "crawler_sources": [
+      {
+        "name": "Anker Shop",
+        "url": "https://anker.com/eu-de/products/b5140442",
+        "min_price_eur": 950,
+        "max_price_eur": 3500
+      },
+      {
+        "name": "Idealo Suche",
+        "url": "https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=Anker%20SOLIX%20Solarbank%203%20E2700%20Pro",
+        "min_price_eur": 900,
+        "max_price_eur": 3500
+      }
+    ],
+    "price_crawl_results": [
+      {
+        "source": "Anker Shop",
+        "url": "https://anker.com/eu-de/products/b5140442",
+        "price": 998.0,
+        "candidates": [
+          998.0,
+          999.0,
+          1000.0,
+          1076.0,
+          1099.0,
+          1276.0,
+          1299.0,
+          1396.0,
+          1398.0,
+          1534.0,
+          1566.0,
+          1596.0,
+          1599.0,
+          1694.0,
+          1699.0,
+          1718.0,
+          1796.0,
+          1799.0,
+          1899.0,
+          1992.0
+        ],
+        "error": null
+      }
+    ],
+    "price_url": "https://anker.com/eu-de/products/b5140442",
+    "price_history": [
+      {
+        "date": "2026-06-14",
+        "price_eur": 898.0,
+        "source": "Anker Shop",
+        "url": "https://anker.com/eu-de/products/b5140442"
+      },
+      {
+        "date": "2026-06-14",
+        "price_eur": 855.0,
+        "source": "Anker Shop",
+        "url": "https://anker.com/eu-de/products/b5140442"
+      },
+      {
+        "date": "2026-06-14",
+        "price_eur": 998.0,
+        "source": "Anker Shop",
+        "url": "https://anker.com/eu-de/products/b5140442"
+      }
+    ]
   },
   {
     "produkt": "EcoFlow STREAM Ultra",
     "kategorie": "Balkon-Speicher, All-in-One + mobile AC-Nutzung",
     "kapazitaet_wh": 1920,
     "preis_eur": 599,
-    "current_price_eur": 599,
-    "price_source": "EcoFlow Shop; Idealo-Autoabfrage vorbereitet",
+    "current_price_eur": 569.0,
+    "price_source": "EcoFlow Shop automatisch langsam gecrawlt",
     "price_checked_at": "2026-06-14",
     "pv_mppt": "2000 W DC, 4 MPPT + 800 W via Mikro-WR = 2800 W Gesamt",
     "mppt_details": "STREAM Ultra: 4 MPPT, PV-Eingangsleistung 2000 W (500 W × 4). Je MPPT laut EcoFlow FAQ: Betriebsspannung 15–60 V, Betriebsstrom ≤14 A. Zusätzlich bis 800 W über Mikro-Wechselrichter möglich.",
@@ -81,15 +216,67 @@
     "datenblatt_url": "https://de.ecoflow.com/products/stream-ultra-pro#specs",
     "quelle": "EcoFlow Produktseite/FAQ, geprüft 2026-06-14",
     "notizen": "Preis/Variante genau prüfen: Shop hat Ultra/Pro/Max-Bundles.",
-    "price_error": "Idealo Autoabfrage fehlgeschlagen (HTTPError); alter Preis beibehalten"
+    "crawler_sources": [
+      {
+        "name": "EcoFlow Shop",
+        "url": "https://de.ecoflow.com/products/stream-ultra-pro",
+        "min_price_eur": 550,
+        "max_price_eur": 3500
+      },
+      {
+        "name": "Idealo Suche",
+        "url": "https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=EcoFlow%20STREAM%20Ultra",
+        "min_price_eur": 500,
+        "max_price_eur": 3500
+      }
+    ],
+    "price_crawl_results": [
+      {
+        "source": "EcoFlow Shop",
+        "url": "https://de.ecoflow.com/products/stream-ultra-pro",
+        "price": 569.0,
+        "candidates": [
+          569.0,
+          579.0,
+          599.0,
+          618.0,
+          649.0,
+          650.0,
+          698.0,
+          700.0,
+          749.0,
+          759.0,
+          798.0,
+          799.0,
+          898.0,
+          899.0,
+          900.0,
+          949.0,
+          950.0,
+          998.0,
+          999.0,
+          1014.0
+        ],
+        "error": null
+      }
+    ],
+    "price_url": "https://de.ecoflow.com/products/stream-ultra-pro",
+    "price_history": [
+      {
+        "date": "2026-06-14",
+        "price_eur": 569.0,
+        "source": "EcoFlow Shop",
+        "url": "https://de.ecoflow.com/products/stream-ultra-pro"
+      }
+    ]
   },
   {
     "produkt": "Zendure SolarFlow 2400 Pro",
     "kategorie": "Balkon-Speicher, bidirektional + Insel",
     "kapazitaet_wh": 2400,
     "preis_eur": 1099,
-    "current_price_eur": 1099,
-    "price_source": "Zendure Shop; Idealo-Autoabfrage vorbereitet",
+    "current_price_eur": 999.0,
+    "price_source": "Zendure Shop automatisch langsam gecrawlt",
     "price_checked_at": "2026-06-14",
     "pv_mppt": "3000 W DC, 4 MPPT; + AC-Kopplung bis 4800 W gesamt",
     "mppt_details": "4 MPPT; max. PV-Eingangsspannung 55 V DC; Betriebsspannungsbereich 14–55 V DC; max. PV-Eingangsstrom 4 × 18 A DC; max. PV-Kurzschlussstrom 4 × 22,5 A; max. PV-Eingangsleistung 3000 W (4 × 750 W).",
@@ -102,7 +289,59 @@
     "datenblatt_url": "https://www.zendure.de/products/zendure-solarflow-2400-pro#specifications",
     "quelle": "Zendure Produktseite, geprüft 2026-06-14",
     "notizen": "Technisch stark, Preis/Wh schwächer.",
-    "price_error": "Idealo Autoabfrage fehlgeschlagen (HTTPError); alter Preis beibehalten"
+    "crawler_sources": [
+      {
+        "name": "Zendure Shop",
+        "url": "https://www.zendure.de/products/zendure-solarflow-2400-pro",
+        "min_price_eur": 900,
+        "max_price_eur": 3500
+      },
+      {
+        "name": "Idealo Suche",
+        "url": "https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=Zendure%20SolarFlow%202400%20Pro",
+        "min_price_eur": 800,
+        "max_price_eur": 3500
+      }
+    ],
+    "price_crawl_results": [
+      {
+        "source": "Zendure Shop",
+        "url": "https://www.zendure.de/products/zendure-solarflow-2400-pro",
+        "price": 999.0,
+        "candidates": [
+          999.0,
+          1099.0,
+          1168.0,
+          1299.0,
+          1320.0,
+          1349.0,
+          1399.0,
+          1418.0,
+          1468.0,
+          1599.0,
+          1668.0,
+          1697.0,
+          1698.0,
+          1699.0,
+          1766.0,
+          1767.0,
+          1768.0,
+          1948.0,
+          1998.0,
+          1999.0
+        ],
+        "error": null
+      }
+    ],
+    "price_url": "https://www.zendure.de/products/zendure-solarflow-2400-pro",
+    "price_history": [
+      {
+        "date": "2026-06-14",
+        "price_eur": 999.0,
+        "source": "Zendure Shop",
+        "url": "https://www.zendure.de/products/zendure-solarflow-2400-pro"
+      }
+    ]
   },
   {
     "produkt": "Growatt NOAH 2000",
@@ -123,7 +362,24 @@
     "datenblatt_url": "https://de.growattpower.com/products/growatt-noah-2000",
     "quelle": "Websuche/Idealo-Snippet + Growatt-Snippet, geprüft 2026-06-14",
     "notizen": "Für reinen BKW-Speicher interessant, für mobile Insel eher nicht. Datenblattangaben noch offen.",
-    "price_error": "Idealo Autoabfrage fehlgeschlagen (HTTPError); alter Preis beibehalten"
+    "price_error": "Idealo Suche: HTTPError: HTTP Error 503: Service Unavailable",
+    "crawler_sources": [
+      {
+        "name": "Idealo Suche",
+        "url": "https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=Growatt%20NOAH%202000",
+        "min_price_eur": 250,
+        "max_price_eur": 1200
+      }
+    ],
+    "price_crawl_results": [
+      {
+        "source": "Idealo Suche",
+        "url": "https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=Growatt%20NOAH%202000",
+        "price": null,
+        "candidates": [],
+        "error": "HTTPError: HTTP Error 503: Service Unavailable"
+      }
+    ]
   },
   {
     "produkt": "DIY 48V LiFePO4 100Ah + Victron/SmartShunt + vorhandener HM-800",
@@ -144,6 +400,6 @@
     "datenblatt_url": "https://www.victronenergy.com/solar-charge-controllers/smartsolar-100-30-100-50",
     "quelle": "Jan Setup + Victron-Datenblatt grob, geprüft 2026-06-14",
     "notizen": "Finanziell gut, aber löst MPPT-Limit/Mobilitätswunsch nur teilweise.",
-    "price_error": "Idealo Autoabfrage fehlgeschlagen (HTTPError); alter Preis beibehalten"
+    "price_error": "DIY-Variante: kein automatisches Crawling eingerichtet"
   }
 ]
